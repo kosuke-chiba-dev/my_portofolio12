@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Pure Bakery</title>
+    <meta name="description" content="Pure BakeryのLPです。">
+    <!-- reset.css destyle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <div class="header-logo">Pure Bakery</div>
+            <nav class="header-nav">
+                <a href="#about" class="header-nav-link">About</a>
+                <a href="#menu" class="header-nav-link">Menu</a>
+                <a href="#news" class="header-nav-link">News</a>
+                <a href="#shop" class="header-nav-link">Shop</a>
+                <a href="#contact" class="header-nav-link">Contact</a>
+            </nav>
+            <button class="hamburger">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <div class="drawer">
+                <nav class="drawer-nav">
+                    <a href="#about" class="drawer-nav-link">About</a>
+                    <a href="#menu" class="drawer-nav-link">Menu</a>
+                    <a href="#news" class="drawer-nav-link">News</a>
+                    <a href="#shop" class="drawer-nav-link">Shop</a>
+                    <a href="#contact" class="drawer-nav-link">Contact</a>
+                </nav>
+            </div>
+            <div class="drawer-bg"></div>
+        </div>
+    </header>
+    <section class="fv">
+        <div class="fv-bg">
+            <picture>
+                <source media="(min-width: 900px)" srcset="img/fv/fv-bg-l-xl.png">
+                <img src="img/fv/fv-bg.png" alt="パンとコーヒーの画像">
+            </picture>
+        </div>
+        <div class="fv-textArea">
+            <h1 class="fv-catch-main">体に優しく、<br>心に美味しく。</h1>
+            <h2 class="fv-catch-sub">全商品オーガニック、信頼の品質。</h2>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="inner">
+            <h2 class="title">About</h2>
+            <div class="about-container">
+                <div class="about-img">
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="img/about/about-img-l-xl.png">
+                        <img src="img/about/about-img.png" alt="パンと小麦粉の画像">
+                    </picture>
+                </div>
+                <div class="about-textArea">
+                    <h3 class="about-textArea-title">自然の恵みで、美しく健康に</h3>
+                    <p class="about-textArea-description">
+                        ピュアベーカリーは、健康志向のあなたのために、オーガニック素材を使った美味しいパンをお届けします。体に優しい自然の恵みをたっぷり詰め込んだパンで、毎日の食事をもっと豊かに、もっとヘルシーに。<br>
+                        忙しい日常の中でも、健康で美しい自分を保ちたいあなたへ。ピュアベーカリーのパンで、心も体も喜ぶ毎日を始めましょう！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="inner">
+            <h2 class="title">Menu</h2>
+            <div class="menu-container">
+                <div class="menu-items">
+                    <a href="" class="menu-item">
+                        <div class="menu-item-img">
+                            <picture>
+                                <source media="(min-width: 900px)" srcset="img/menu/menu-item-img-1-l-xl.png">
+                                <img src="img/menu/menu-item-img-1.png" alt="チョコチップパンの画像">
+                            </picture>
+                        </div>
+                        <div class="menu-item-textArea">
+                            <h3 class="menu-item-title">チョコチップパン</h3>
+                            <div class="menu-item-price">￥320</div>
+                        </div>
+                    </a>
+                    <a href="" class="menu-item">
+                        <div class="menu-item-img">
+                            <picture>
+                                <source media="(min-width: 900px)" srcset="img/menu/menu-item-img-2-l-xl.png">
+                                <img src="img/menu/menu-item-img-2.png" alt="ショートブレッドの画像">
+                            </picture>
+                        </div>
+                        <div class="menu-item-textArea">
+                            <h3 class="menu-item-title">ショートブレッド</h3>
+                            <div class="menu-item-price">￥340</div>
+                        </div>
+                    </a>
+                    <a href="" class="menu-item">
+                        <div class="menu-item-img">
+                            <picture>
+                                <source media="(min-width: 900px)" srcset="img/menu/menu-item-img-3-l-xl.png">
+                                <img src="img/menu/menu-item-img-3.png" alt="チョコレートクロワッサンの画像">
+                            </picture>
+                        </div>
+                        <div class="menu-item-textArea">
+                            <h3 class="menu-item-title">チョコレートクロワッサン</h3>
+                            <div class="menu-item-price">￥320</div>
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="moreBtn">
+                    <span class="moreBtn-text">more</span>
+                    <svg class="moreBtn-arrow" width="7" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m2.567 10.325 3.887-3.887a1.495 1.495 0 0 0 0-2.116L2.567.435C1.62-.495 0 .165 0 1.5v7.76c0 1.35 1.621 2.011 2.567 1.066z"
+                            fill="#29665F" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="inner">
+            <h2 class="title">News</h2>
+            <div class="news-container">
+                <div class="news-items">
+                    <a href="" class="news-item">
+                        <div class="news-item-img">
+                            <picture>
+                                <source media="(min-width: 900px)" srcset="img/news/news-item-img-1-l-xl.png">
+                                <img src="img/news/news-item-img-1.png" alt="マカロンがたくさん入っているショーケースの画像">
+                            </picture>
+                        </div>
+                        <div class="news-item-textArea">
+                            <div class="news-item-date">2024年04月02日</div>
+                            <h3 class="news-item-title">ピュアベーカリーおすすめ！健康と美味しさを満喫する特集：オーガニック食材を活用した手作り商品の魅力について！</h3>
+                            <p class="news-item-description"><span
+                                    class="news-item-description-text">ピュアベーカリーが自信を持ってお届けする、健康と美味しさを追求したおすすめの商品をご紹介します！私たちは、厳選されたオーガニ</span>
+                                <span class="span dot">･･･</span>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-item">
+                        <div class="news-item-img">
+                            <picture>
+                                <source media="(min-width: 900px)" srcset="img/news/news-item-img-2-l-xl.png">
+                                <img src="img/news/news-item-img-2.png" alt="チュロスの画像">
+                            </picture>
+                        </div>
+                        <div class="news-item-textArea">
+                            <div class="news-item-date">2024年04月02日</div>
+                            <h3 class="news-item-title">ピュアベーカリーの新商品！オーガニック素材で作ったヘルシーチュロスがついに登場しました！</h3>
+                            <p class="news-item-description"><span
+                                    class="news-item-description-text">私たちは、体に優しいおいしいスイーツを提供するため、オーガニック素材を使用したチュロスを開発しました。新しいチュロスは、甘い</span>
+                                <span class="span dot">･･･</span>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-item">
+                        <div class="news-item-img">
+                            <picture>
+                                <source media="(min-width: 900px)" srcset="img/news/news-item-img-3-l-xl.png">
+                                <img src="img/news/news-item-img-3.png" alt="パンをこねている画像">
+                            </picture>
+                        </div>
+                        <div class="news-item-textArea">
+                            <div class="news-item-date">2024年02月11日</div>
+                            <h3 class="news-item-title">ピュアベーカリーは、オーガニックで健康的なパンを手頃な価格で提供することを目指して、新たな展開をスタートしました！</h3>
+                            <p class="news-item-description"><span
+                                    class="news-item-description-text">私たちのパンは、選りすぐりのオーガニック素材を使用し、毎日の食卓に安心と美味しさをお届けします。健康志向の女性たちにぴったり</span>
+                                <span class="span dot">･･･</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="moreBtn">
+                    <span class="moreBtn-text">more</span>
+                    <svg class="moreBtn-arrow" width="7" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m2.567 10.325 3.887-3.887a1.495 1.495 0 0 0 0-2.116L2.567.435C1.62-.495 0 .165 0 1.5v7.76c0 1.35 1.621 2.011 2.567 1.066z"
+                            fill="#29665F" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="shop">
+        <div class="inner">
+            <h2 class="title">Shop</h2>
+            <div class="shop-container">
+                <div class="shop-googleMap">
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="img/shop/shop-googleMap-l-xl.png">
+                        <img src="img/shop/shop-googleMap.png" alt="GoogleMapの画像">
+                    </picture>
+                </div>
+                <div class="shop-textArea">
+                    <h3 class="shop-textArea-title">Pure Bakery</h3>
+                    <div class="shop-content">
+                        <div class="shop-content-item">
+                            <h4 class="shop-content-item-title">住所</h4>
+                            <p class="shop-content-item-description">〒150 - 0000<br>
+                                東京都渋谷区表参道 10 - 20 - 20</p>
+                        </div>
+                        <div class="shop-content-item">
+                            <h4 class="shop-content-item-title">営業時間</h4>
+                            <p class="shop-content-item-description">11 : 00 - 20 : 00</p>
+                        </div>
+                        <div class="shop-content-item">
+                            <h4 class="shop-content-item-title">定休日</h4>
+                            <p class="shop-content-item-description">日曜</p>
+                        </div>
+                        <div class="shop-content-item">
+                            <h4 class="shop-content-item-title">アクセス</h4>
+                            <p class="shop-content-item-description">東京メトロ千代田線「永田町」5番出口から徒歩5分</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="inner">
+            <h2 class="title">Contact</h2>
+            <div class="contact-container">
+                <p class="contact-description">ご質問などは、<br class="only-s-m">
+                    下記のフォームよりお問い合わせください。</p>
+                <form class="form">
+                    <div class="form-row">
+                        <div class="form-row-top">
+                            <h3 class="form-row-title">名前</h3>
+                            <div class="form-row-label">必須</div>
+                        </div>
+                        <input type="text" class="form-row-input" placeholder="例 )  山田　花子">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row-top">
+                            <h3 class="form-row-title">メールアドレス</h3>
+                            <div class="form-row-label">必須</div>
+                        </div>
+                        <input type="email" class="form-row-input" placeholder="例 )  hanako-yamada@example.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row-top">
+                            <h3 class="form-row-title">電話番号</h3>
+                            <div class="form-row-label">必須</div>
+                        </div>
+                        <input type="tel" class="form-row-input" placeholder="例 )  090-0000-0000">
+                    </div>
+                    <div class="form-row textarea-row">
+                        <div class="form-row-top">
+                            <h3 class="form-row-title">お問い合わせ内容</h3>
+                            <div class="form-row-label">必須</div>
+                        </div>
+                        <textarea class="form-row-input textarea" placeholder="テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"></textarea>
+                    </div>
+                    <div class="privacy-row">
+                        <input type="checkbox" class="privacy-row-checkbox-input" id="privacy">
+                        <label for="privacy" class="privacy-row-checkbox-label"></label>
+                        <div class="privacy-row-checkbox-text"><a href="" class="privacy-row-checkbox-text-link">プライバシーポリシー</a>に同意する</div>
+                    </div>
+                    <button class="form-submit" type="submit">送信</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <div class="footer-main">
+                <h2 class="footer-logo">Pure Bakery</h2>
+                <nav class="footer-nav">
+                    <a href="#about" class="footer-nav-link">About</a>
+                    <a href="#menu" class="footer-nav-link">Menu</a>
+                    <a href="#news" class="footer-nav-link">News</a>
+                    <a href="#shop" class="footer-nav-link">Shop</a>
+                    <a href="#contact" class="footer-nav-link">Contact</a>
+                </nav>
+                <nav class="footer-snsNav">
+                    <a href="" class="footer-snsNav-link"><img src="img/footer/footer-snsNav-twitter.png" alt="twitterのアイコンの画像"></a>
+                    <a href="" class="footer-snsNav-link"><img src="img/footer/footer-snsNav-instagram.png" alt="instagramのアイコンの画像"></a>
+                    <a href="" class="footer-snsNav-link"><img src="img/footer/footer-snsNav-facebook.png" alt="facebookのアイコンの画像"></a>
+                </nav>
+            </div>
+            <div class="footer-copyRight">Copyright © ピュアベーカリー All Rights Reserved.</div>
+        </div>
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

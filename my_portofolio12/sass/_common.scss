@@ -1,0 +1,121 @@
+// メディアクエリ-----------------------------------
+$breakpoints: (
+  //キー　　値
+  "s": "screen and (max-width: 699px)",
+  "m": "(min-width: 700px) and (max-width: 899px)",
+  "l": "(min-width: 900px) and (max-width: 1199px)",
+  "xl": "screen and (min-width: 1200px)"
+) !default;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//   font-family: "Roboto", sans-serif;
+//  font-family: "Caveat", cursive;
+//  font-family: "Noto Sans JP", sans-serif;
+
+
+// title------------------------------------------------
+.title{
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    line-height: calc(50 / 40);
+    font-weight: 700;
+    color: #1A1A1A;
+    text-align: center;
+    position: relative;
+    @include mq(l) {
+        font-size: 55px;
+        line-height: calc(69 / 55);
+    }
+    @include mq(xl) {
+        font-size: 55px;
+        line-height: calc(69 / 55);
+    }
+    &::after{
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: #F2A461;
+        position: absolute;
+        left: 50%;
+        bottom: -9px;
+        transform: translateX(-50%) translateY(100%);
+        @include mq(l) {
+            bottom: -31px;
+        }
+        @include mq(xl) {
+            bottom: -31px;
+        }
+    }
+}
+
+.contact{
+    .title{
+        color: #fff;
+    }
+}
+
+// btn--------------------------------------------------
+.moreBtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border: 1px solid #29665F;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+    &:hover{
+        background-color: #F2A461;
+        border: 1px solid #F2A461;
+        .moreBtn-text{
+            color: #fff;
+        }
+        .moreBtn-arrow{
+            path{
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.moreBtn-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #29665F;
+    transition: color 0.3s;
+}
+
+.moreBtn-arrow{
+    path{
+        transition: fill 0.3s;
+    }
+}
+
+// only-----------------------------------------------------------
+.only-s-m{
+    @include mq(l) {
+        display: none;
+    }
+    @include mq(xl) {
+        display: none;
+    }
+}
+
+// no-scroll-------------------------------------------
+.no-scroll{
+    overflow: hidden;
+}
