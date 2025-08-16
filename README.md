@@ -5,6 +5,8 @@
 
 さらに、バナー広告もデザインしました。
 
+レスポンシブ対応済みです。
+
 ![要件定義](my_portofolio12/img/readme/requirements_definition.png)
 
 ![ペルソナ設定](my_portofolio12/img/readme/persona.png)
